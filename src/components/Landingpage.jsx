@@ -8,10 +8,10 @@ export default function Landingpage() {
   return (
 
     // PARENT DIV OF ALL
-    <div data-scroll data-scroll-section data-scroll-speed="-.3"  className='w-full h-screen bg-zinc-900 pt-2'>
+    <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-zinc-900 pt-2'>
 
     {/*DIV CONTAINER OF TEXTSTRUCTURE----*/}
-        <div className="textstructure mt-52 px-20">
+        <div className="textstructure mt-52 px-20 font-[FoundersGrotesk-Semibold]">
             {["We create"," eye-opening", "presentations"].map((item,index)=>{
                 return (
                     <div className="masker"> 

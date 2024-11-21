@@ -1,24 +1,46 @@
-import React from 'react'
+import React from 'react';
+import { IoLogoInstagram } from "react-icons/io5";
+import { IoLogoFacebook } from "react-icons/io";
+import { FaGithub } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <div className='w-full h-screen bg-zinc-900 flex gap-5'>
+    <div className='w-full h-screen bg-zinc-900 flex gap-5 border-t-[1px] border-zinc-700'>
         <div className='w-1/2 h-full p-20 flex flex-col justify-between'>
             <div className='heading'>
-                <h1 className='uppercase text-[6vw] font-semibold leading-none tracking-tighter -mb-13'>eye-</h1>
+                <h1 className='uppercase text-[6vw] font-semibold leading-none tracking-tighter -mb-13'>eye</h1>
                 <h1 className='uppercase text-[6vw] font-semibold leading-none tracking-tighter -mb-13'>opening</h1>
             </div>
-            <h3 className='text-[1.5vw]'>Ogee</h3>
+            <h3 className='text-[1.2vw]'>Ogee</h3>
         </div>
 
+            {/* footer div Parent  */}
         <div className='w-1/2'>
+
+            {/* footer div child-1  */}
             <div className='w-1/2 h-full p-20 flex flex-col justify-between'>
+
+            {/* headings div  */}
                 <div className="heading">
                     <h1 className='uppercase text-[6vw] font-semibold leading-none tracking-tighter -mb-13'>presentations</h1>
-                    <div className='mediahandles mt-10'>
-                        <a className='block text-xl font-light' href="www.instagram.com">Instagram</a>
-                        <a className='block text-xl font-light' href="www.facebook.com">Facebook</a>
-                        <a className='block text-xl font-light' href="www.linkdin.com">Linkdin</a>
+                    
+            {/* social media handles  */}
+
+                    <div className='mediahandles mt-10 space-y-4'>
+                        <div className='flex text-2xl gap-3 items-center'>
+                            <IoLogoInstagram />
+                            <a className='block text-xl font-light' href="https://www.instagram.com/"> Instagram</a>
+                        </div>
+
+                        <div className='flex text-2xl gap-3 items-center'>
+                            <IoLogoFacebook />
+                            <a className='block text-xl font-light' href="https://www.facebook.com/?_rdr">Facebook</a>
+                        </div>
+
+                        <div className='flex text-2xl gap-3 items-center'>
+                            <FaGithub />
+                            <a className='block text-xl font-light' href="https://github.com/ishersinghmerndeveloper">Github</a>
+                        </div>
                     </div>        
                 </div>
             </div>
