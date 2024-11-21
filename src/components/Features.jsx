@@ -14,13 +14,13 @@ export default function Features() {
     }
     
   return (
-
+    <>
     <div className='w-full py-20'>
         <div className="w-full px-20 border-b-[1px] border-zinc-700 pb-6">
             <h1 className='text-8xl pb-14 tracking-tight'>Featured Projects</h1>
         </div>
 
-        <div className=' containerone px-20'>
+        <div className='containerone px-20'>
 
             <div className='container flex item-center gap-[12vw]'>
                 <div className='w-full'>
@@ -44,17 +44,19 @@ export default function Features() {
                   </motion.div>
 
                   <motion.div onHoverStart={()=>handleHover(1)} onHoverEnd={()=>handleHoverEnd(1)} className="cardcontainer relative w-1/2 h-[75vh]">
-                            <h1 className='absolute flex text-[#cdea68] overflow-hidden right-full z-[9] leading-none tracking-tighter translate-x-1/2 -translate-y-1/2 top-1/2 text-8xl uppercase'>
-                                {"AH2 & Matt Horn".split("").map((item,index)=>
+                        <h1 className='absolute flex text-[#cdea68] overflow-hidden right-full z-[9] leading-none tracking-tighter translate-x-1/2 -translate-y-1/2 top-1/2 text-8xl uppercase'>
+                            {"AH2 & Matt Horn".split("").map((item,index)=>
                             <motion.span initial={{y: "100%"}} animate={cards[1]} transition={{ease: [0.22, 1, 0.36, 1], delay: index*.02 }} className='inline-block'> {item} </motion.span>)}                            
-                            </h1>
+                        </h1>
                         <div className='card w-full h-full  rounded-xl overflow-hidden'>
                             <img className='w-full h-full bg-cover' src="https://ochi.design/wp-content/uploads/2024/08/Frame-481692-1-663x551.png" />
                         </div>
                   </motion.div>
+
             </div>
         </div> 
-        <div className=' containertwo px-20 mt-10'>
+
+        <div className='containertwo px-20 mt-10'>
 
             {/* headings  */}
 
@@ -71,7 +73,7 @@ export default function Features() {
             
             <div className="cards w-full flex gap-10 mt-14">
                 
-                  <motion.div onHoverStart={()=>handleHover(0)} onHoverEnd={()=>handleHoverEnd(0)}  className="cardcontainer relative w-1/2 h-[75vh]">
+                  <motion.div onHoverStart={()=> handleHover(0)} onHoverEnd={()=>handleHoverEnd(0)}  className="cardcontainer relative w-1/2 h-[75vh]">
                       <h1 className='absolute flex text-[#cdea68] overflow-hidden left-full z-[9] leading-none tracking-tighter -translate-x-1/2 -translate-y-1/2 top-1/2 text-8xl uppercase'>
                             {"fyde".split("").map((item,index)=>
                             <motion.span initial={{y: "100%"}} animate={cards[0]} transition={{ease: [0.22, 1, 0.36, 1], delay: index*.02 }} className='inline-block'> {item} </motion.span>)}                                
@@ -93,6 +95,6 @@ export default function Features() {
             </div>
         </div>
     </div>
-    
+    </>
   );
 }

@@ -20,7 +20,7 @@ export default function Cards() {
             </div>
             <div className="card relative rounded-xl w-full h-full bg-[#192826] flex items-center justify-center">
                 <img src="https://ochi.design/wp-content/uploads/2022/04/logo003.png" alt="" />
-                <button className='absolute left-10 bottom-10 px-5 py-1 border-2 rounded-full uppercase hover:underline'>business bootcamp alumni</button    >    
+                <button className='absolute left-10 bottom-10 px-5 py-1 border-2 rounded-full uppercase hover:underline'>business bootcamp alumni</button>    
             </div>         
         </div>
     </div>
