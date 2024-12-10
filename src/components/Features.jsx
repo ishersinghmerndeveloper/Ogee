@@ -73,7 +73,7 @@ export default function Features() {
             
             <div className="cards w-full flex gap-10 mt-14">
                 
-                  <motion.div onHoverStart={()=> handleHover(0)} onHoverEnd={()=>handleHoverEnd(0)}  className="cardcontainer relative w-1/2 h-[75vh]">
+                  <motion.section onHoverStart={()=> handleHover(0)} onHoverEnd={()=>handleHoverEnd(0)}  className="cardcontainer relative w-1/2 h-[75vh]">
                       <h1 className='absolute flex text-[#cdea68] overflow-hidden left-full z-[9] leading-none tracking-tighter -translate-x-1/2 -translate-y-1/2 top-1/2 text-8xl uppercase'>
                             {"fyde".split("").map((item,index)=>
                             <motion.span initial={{y: "100%"}} animate={cards[0]} transition={{ease: [0.22, 1, 0.36, 1], delay: index*.02 }} className='inline-block'> {item} </motion.span>)}                                
@@ -81,9 +81,9 @@ export default function Features() {
                       <div className='card w-full h-full rounded-xl overflow-hidden'>
                           <img className='w-full h-full bg-cover' src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"/>
                       </div>
-                  </motion.div>
+                  </motion.section>
 
-                  <motion.div onHoverStart={()=>handleHover(1)} onHoverEnd={()=>handleHoverEnd(1)} className="cardcontainer relative w-1/2 h-[75vh]">
+                  <motion.section onHoverStart={()=>handleHover(1)} onHoverEnd={()=>handleHoverEnd(1)} className="cardcontainer relative w-1/2 h-[75vh]">
                         <h1 className='absolute flex text-[#cdea68] overflow-hidden right-full z-[9] leading-none tracking-tighter translate-x-1/2 -translate-y-1/2 top-1/2 text-8xl uppercase'>
                                 {"vise".split("").map((item,index)=>
                             <motion.span initial={{y: "100%"}} animate={cards[1]} transition={{ease: [0.22, 1, 0.36, 1], delay: index*.02 }} className='inline-block'> {item} </motion.span>)}                            
@@ -91,7 +91,7 @@ export default function Features() {
                         <div className='card w-full h-full  rounded-xl overflow-hidden'>
                             <img className='w-full h-full bg-cover' src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg" />
                         </div>
-                  </motion.div>
+                  </motion.section>
             </div>
         </div>
     </div>
